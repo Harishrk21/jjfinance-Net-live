@@ -312,7 +312,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Helpful Resources</h2>
           <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
@@ -327,7 +327,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

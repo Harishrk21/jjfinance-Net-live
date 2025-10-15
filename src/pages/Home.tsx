@@ -86,6 +86,9 @@ const Home = () => {
             <p className="text-xl md:text-2xl mb-4 text-blue-100">
               Fast Approvals | Minimal Documentation | Transparent Process
             </p>
+            <p className="text-xl md:text-2xl mb-4 text-blue-100">
+              We are Certified Money Lenders
+            </p>
             <p className="text-lg mb-10 text-blue-200 max-w-3xl mx-auto">
               Get instant loan approvals for property-based finance, personal loans, home loans, and private finance in Chennai
             </p>
@@ -240,7 +243,7 @@ const Home = () => {
             
             <div className="bg-white rounded-xl overflow-hidden shadow-xl border border-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2677!2d80.1247!3d12.9564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzIzLjAiTiA4MMKwMDcnMjguOSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.118249882585!2d80.12788767507739!3d13.02814098729248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQxLjMiTiA4MMKwMDcnNDkuNyJF!5e0!3m2!1sen!2sin!4v1760535690422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

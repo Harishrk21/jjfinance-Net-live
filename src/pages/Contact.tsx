@@ -198,7 +198,7 @@ const Contact = () => {
                 varun@jjfinmart.com
               </a>
               <p className="text-sm text-muted-foreground mb-6">2-hour response time during business hours</p>
-              <Button asChild variant="outline" className="btn-press w-full">
+              <Button asChild variant="outline" className="gradient-gold text-primary font-semibold btn-press w-full">
                 <a href="mailto:varun@jjfinmart.com">Send Email</a>
               </Button>
             </div>
@@ -214,8 +214,8 @@ const Contact = () => {
                 Srinivasapuram, Paraniputthur,<br />
                 Chennai - 600122
               </address>
-              <Button asChild variant="outline" className="btn-press w-full">
-                <a href="https://maps.google.com/?q=Kamatchi+Amman+Nagar+Srinivasapuram+Chennai" target="_blank" rel="noopener noreferrer">
+              <Button asChild variant="outline" className="gradient-gold text-primary font-semibold btn-press w-full">
+                <a href="https://maps.app.goo.gl/rHAVztLJPahWSSMA9">
                   Get Directions
                 </a>
               </Button>
@@ -404,7 +404,7 @@ const Contact = () => {
 
             <div className="rounded-2xl overflow-hidden shadow-lg mb-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2677!2d80.1247!3d12.9564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzIzLjAiTiA4MMKwMDcnMjguOSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.118249882585!2d80.12788767507739!3d13.02814098729248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQxLjMiTiA4MMKwMDcnNDkuNyJF!5e0!3m2!1sen!2sin!4v1760535690422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}

@@ -12,6 +12,12 @@ import FAQAccordion from '@/components/FAQAccordion';
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  
+  // Google Maps URLs
+  const MAPS_EMBED_URL = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.118249882585!2d80.12788767507739!3d13.02814098729248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQxLjMiTiA4MMKwMDcnNDkuNyJF!5e0!3m2!1sen!2sin!4v1760535690422!5m2!1sen!2sin";
+  const MAPS_LINK_URL = "https://www.google.com/maps/place/13%C2%B001'41.3%22N+80%C2%B007'49.7%22E/@13.0281409,80.1278876,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.028141!4d80.130476";
+  const MAPS_DIRECTIONS_URL = "https://www.google.com/maps/dir/?api=1&destination=13.028141,80.130476";
+  
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',
@@ -215,7 +221,7 @@ const Contact = () => {
                 Chennai - 600122
               </address>
               <Button asChild variant="outline" className="gradient-gold text-primary font-semibold btn-press w-full">
-                <a href="https://maps.app.goo.gl/rHAVztLJPahWSSMA9">
+                <a href={MAPS_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer">
                   Get Directions
                 </a>
               </Button>
@@ -404,7 +410,7 @@ const Contact = () => {
 
             <div className="rounded-2xl overflow-hidden shadow-lg mb-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3887.118249882585!2d80.12788767507739!3d13.02814098729248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDAxJzQxLjMiTiA4MMKwMDcnNDkuNyJF!5e0!3m2!1sen!2sin!4v1760535690422!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src={MAPS_EMBED_URL}
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
@@ -417,13 +423,13 @@ const Contact = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="outline" className="btn-press">
-                <a href="https://maps.google.com/?q=Kamatchi+Amman+Nagar+Srinivasapuram+Chennai" target="_blank" rel="noopener noreferrer">
+                <a href={MAPS_LINK_URL} target="_blank" rel="noopener noreferrer">
                   <MapPinned className="mr-2 h-4 w-4" />
                   Open in Google Maps
                 </a>
               </Button>
               <Button asChild variant="outline" className="btn-press">
-                <a href="https://maps.google.com/?q=Kamatchi+Amman+Nagar+Srinivasapuram+Chennai&navigate=yes" target="_blank" rel="noopener noreferrer">
+                <a href={MAPS_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer">
                   <MapPin className="mr-2 h-4 w-4" />
                   Get Directions
                 </a>
@@ -508,10 +514,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Quick Callback Request */}
-
-
-
       {/* Contact FAQ */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
@@ -569,7 +571,7 @@ const Contact = () => {
               </a>
             </Button>
             <Button asChild size="lg" variant="outline" className="gradient-gold text-primary font-bold text-lg btn-press">
-              <a href="https://maps.google.com/?q=Kamatchi+Amman+Nagar+Srinivasapuram+Chennai" target="_blank" rel="noopener noreferrer">
+              <a href={MAPS_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer">
                 <MapPin className="mr-2 h-5 w-5" />
                 Get Directions
               </a>

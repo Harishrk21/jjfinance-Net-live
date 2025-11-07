@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
-import { ChevronRight, Target, Eye, Shield, Clock, Users, TrendingUp, Award, CheckCircle2, Building2, Star, Heart, Handshake, MapPin, Phone, Mail } from 'lucide-react';
+import { ChevronRight, Target, Eye, Shield, Clock, Users, TrendingUp, Award, CheckCircle2, Building2, Star, Heart, Handshake, MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import fatherImage from '../assets/father.jpeg';
+import sonImage from '../assets/son.jpeg';
 
 const About = () => {
   const journeySteps = [
@@ -61,6 +63,25 @@ const About = () => {
       title: 'Simplicity',
       description: 'Making finance accessible with straightforward processes',
     },
+  ];
+
+  const leadership = [
+    {
+      name: 'JayaKumar',
+      role: 'Proprietor & Founder',
+      image: fatherImage,
+      bio: 'With over 25 years of experience in the financial services industry, Mr. JayaKumar founded JJ Finance with a vision to make financial services more accessible and transparent for the Chennai community. His deep understanding of local market dynamics and unwavering commitment to ethical practices has been the cornerstone of our company\'s foundation.',
+      expertise: ['Financial Strategy', 'Risk Management', 'Customer Relations', 'Business Development'],
+      quote: 'Our customers\' financial success is our success. Every loan we approve is a step towards building lasting trust.'
+    },
+    {
+      name: 'J. Varun',
+      role: 'Director & Operations Head',
+      image: sonImage,
+      bio: 'Armed with an MBA in Finance and modern technological expertise, Karthik brings fresh perspectives to traditional finance. He leads our digital transformation initiatives and ensures that JJ Finance stays ahead with innovative solutions while maintaining the personal touch that our customers value.',
+      expertise: ['Digital Innovation', 'Operations Management', 'Process Optimization', 'Customer Experience'],
+      quote: 'Combining traditional values with modern technology - that\'s how we deliver excellence in every transaction.'
+    }
   ];
 
   const differentiators = [
@@ -224,17 +245,15 @@ const About = () => {
               </div>
             </div>
 
-            {/* Journey Section - Improved Timeline */}
+            {/* Journey Section */}
             <div className="mb-12 md:mb-16">
               <h3 className="text-2xl md:text-3xl font-bold mb-8 md:mb-12 text-center">Our Journey</h3>
               <div className="relative">
-                {/* Timeline line - hidden on mobile, visible on lg screens */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary via-accent to-primary rounded-full hidden lg:block"></div>
                 
                 <div className="space-y-8 md:space-y-12">
                   {journeySteps.map((step, index) => (
                     <div key={index} className={`flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8 ${index % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
-                      {/* Content Card */}
                       <div className={`w-full lg:flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
                         <div className="bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl transition-shadow duration-300">
                           <div className={`flex items-center gap-3 mb-4 ${index % 2 === 0 ? 'lg:justify-end' : 'lg:justify-start'}`}>
@@ -246,12 +265,10 @@ const About = () => {
                         </div>
                       </div>
 
-                      {/* Timeline Node */}
                       <div className="hidden lg:flex w-16 h-16 rounded-full gradient-primary text-primary-foreground items-center justify-center font-bold text-lg shadow-lg z-10 flex-shrink-0">
                         {index + 1}
                       </div>
 
-                      {/* Spacer for alternating layout */}
                       <div className="flex-1 hidden lg:block"></div>
                     </div>
                   ))}
@@ -262,8 +279,87 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission, Vision, Values */}
+      {/* Leadership Section - NEW */}
       <section className="py-12 md:py-16 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Leadership</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Combining decades of experience with innovative thinking to serve you better
+              </p>
+            </div>
+
+            <div className="space-y-12 md:space-y-16">
+              {leadership.map((leader, index) => (
+                <div key={index} className={`grid lg:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 !== 0 ? 'lg:grid-flow-dense' : ''}`}>
+                  {/* Image */}
+                  <div className={`${index % 2 !== 0 ? 'lg:col-start-2' : ''}`}>
+                    <div className="relative group">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300"></div>
+                      <div className="relative bg-card rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img 
+                          src={leader.image} 
+                          alt={leader.name}
+                          className="w-full h-[400px] md:h-[500px] object-cover"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6">
+                          <h3 className="text-2xl md:text-3xl font-bold text-white mb-1">{leader.name}</h3>
+                          <p className="text-amber-400 font-semibold text-lg">{leader.role}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className={`${index % 2 !== 0 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                    <div className="space-y-6">
+                      <div className="bg-card rounded-xl p-6 shadow-lg border border-border">
+                        <p className="text-muted-foreground leading-relaxed mb-4">
+                          {leader.bio}
+                        </p>
+                        <div className="border-l-4 border-accent pl-4 py-2 bg-accent/5 rounded-r">
+                          <p className="text-sm italic text-foreground">
+                            "{leader.quote}"
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl p-6">
+                        <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
+                          <Award className="h-5 w-5 text-accent" />
+                          Areas of Expertise
+                        </h4>
+                        <div className="grid grid-cols-2 gap-3">
+                          {leader.expertise.map((skill, idx) => (
+                            <div key={idx} className="flex items-center gap-2">
+                              <CheckCircle2 className="h-4 w-4 text-accent flex-shrink-0" />
+                              <span className="text-sm font-medium">{skill}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Team Values */}
+            <div className="mt-12 md:mt-16 bg-card rounded-2xl p-8 shadow-lg border border-border text-center">
+              <h3 className="text-2xl font-bold mb-4">A Family-Led, Customer-Focused Approach</h3>
+              <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                As a family-run business, we bring personal accountability and genuine care to every interaction. 
+                Our leadership team is always accessible, ensuring that your concerns are heard and addressed promptly. 
+                We believe in building relationships, not just processing transactions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission, Vision, Values */}
+      <section className="py-12 md:py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">

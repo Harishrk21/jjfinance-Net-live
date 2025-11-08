@@ -181,8 +181,8 @@ const Contact = () => {
                 <a href="tel:7639000067" className="block text-accent hover:underline font-semibold">
                   7639000067
                 </a>
-                <a href="tel:7639000067" className="block text-accent hover:underline font-semibold">
-                  7639000067
+                <a href="tel:9498002010" className="block text-accent hover:underline font-semibold">
+                  9498002010
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mb-4">Mon-Fri: 9:30 AM - 6:30 PM<br />Sat: 9:30 AM - 2:00 PM</p>

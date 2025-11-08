@@ -164,14 +164,14 @@ const About = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 76390 00067',
+      link: 'tel:+917639000067'
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'info@jjfinance.com',
-      link: 'mailto:info@jjfinance.com'
+      value: 'varun@jjfinmart.com',
+      link: 'mailto:varun@jjfinmart.com'
     },
     {
       icon: MapPin,

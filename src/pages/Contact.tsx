@@ -135,7 +135,7 @@ const Contact = () => {
     },
     {
       question: 'How quickly will I get a response?',
-      answer: 'We respond to all inquiries within 2 hours during business hours. For urgent matters, please call us directly at 044-46600889 or WhatsApp at 9498002010.',
+      answer: 'We respond to all inquiries within 2 hours during business hours. For urgent matters, please call us directly at 044-46600889 or WhatsApp at 7639000067.',
     },
     {
       question: 'Is parking available at your office?',
@@ -181,8 +181,8 @@ const Contact = () => {
                 <a href="tel:7639000067" className="block text-accent hover:underline font-semibold">
                   7639000067
                 </a>
-                <a href="tel:9498002010" className="block text-accent hover:underline font-semibold">
-                  9498002010
+                <a href="tel:7639000067" className="block text-accent hover:underline font-semibold">
+                  7639000067
                 </a>
               </div>
               <p className="text-sm text-muted-foreground mb-4">Mon-Fri: 9:30 AM - 6:30 PM<br />Sat: 9:30 AM - 2:00 PM</p>
@@ -233,12 +233,12 @@ const Contact = () => {
                 <MessageCircle className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold mb-4">WhatsApp</h3>
-              <a href="https://wa.me/919498002010" target="_blank" rel="noopener noreferrer" className="block text-accent hover:underline font-semibold mb-4">
+              <a href="https://wa.me/917639000067" target="_blank" rel="noopener noreferrer" className="block text-accent hover:underline font-semibold mb-4">
                 7639000067
               </a>
               <p className="text-sm text-muted-foreground mb-6">Quick replies during business hours</p>
               <Button asChild className="bg-[#25D366] hover:bg-[#20BA5A] text-white btn-press w-full">
-                <a href="https://wa.me/919498002010" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/917639000067" target="_blank" rel="noopener noreferrer">
                   Chat Now
                 </a>
               </Button>
@@ -465,7 +465,7 @@ const Contact = () => {
               </div>
               <div className="mt-6 p-4 bg-accent/10 rounded-lg">
                 <p className="text-sm font-semibold text-accent">Emergency Support for Existing Customers</p>
-                <p className="text-sm text-muted-foreground mt-1">WhatsApp 24/7: 9498002010</p>
+                <p className="text-sm text-muted-foreground mt-1">WhatsApp 24/7: 7639000067</p>
               </div>
             </div>
 
@@ -539,9 +539,9 @@ const Contact = () => {
               For urgent queries related to your existing loan, contact us 24/7 on WhatsApp
             </p>
             <Button asChild className="bg-[#25D366] hover:bg-[#20BA5A] text-white btn-press">
-              <a href="https://wa.me/919498002010" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/917639000067" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
-                WhatsApp: 9498002010
+                WhatsApp: 7639000067
               </a>
             </Button>
           </div>

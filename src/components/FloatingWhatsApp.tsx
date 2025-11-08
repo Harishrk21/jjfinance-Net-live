@@ -12,7 +12,7 @@ const FloatingWhatsApp = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappNumber = '919498002010';  
+  const whatsappNumber = '917639000067';  
   const message = encodeURIComponent('Hi, I would like to inquire about loan services at JJ Finance.');
 
   return (

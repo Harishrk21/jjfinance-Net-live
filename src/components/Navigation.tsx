@@ -181,7 +181,7 @@ const Navigation = () => {
                 </a>
                 
                 <a
-                  href="https://wa.me/919498002010"
+                  href="https://wa.me/917639000067"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-base font-semibold py-3 px-4 hover:bg-slate-50 rounded-lg transition-all duration-300 text-slate-700"
@@ -191,7 +191,7 @@ const Navigation = () => {
                   </div>
                   <div>
                     <div className="text-xs text-slate-500">WhatsApp</div>
-                    <div>9498002010</div>
+                    <div>7639000067</div>
                   </div>
                 </a>
                 

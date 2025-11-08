@@ -129,7 +129,7 @@ const Home = () => {
               <Phone className="h-4 w-4" />
               <span>044-46600889</span>
             </a>
-            <a href="https://wa.me/919498002010" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-900 hover:text-yellow-600 transition-colors font-medium">
+            <a href="https://wa.me/917639000067" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-900 hover:text-yellow-600 transition-colors font-medium">
               <Phone className="h-4 w-4" />
               <span>7639000067</span>
             </a>
